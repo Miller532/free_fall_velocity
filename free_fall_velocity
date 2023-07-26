@@ -1,0 +1,10 @@
+import math
+
+def free_fall_velocity(time):
+    g = 9.81  # Ускорение свободного падения на Земле, м/с^2
+    velocity = g * time
+    return velocity
+
+time = float(input("Введите время падения свободного тела (в секундах): "))
+velocity = free_fall_velocity(time)
+print("Скорость падения свободного тела:", velocity, "м/с")
